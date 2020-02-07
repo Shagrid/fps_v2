@@ -5,6 +5,7 @@ namespace Geekbrains
     public abstract class BaseObjectScene : MonoBehaviour
     {
         private int _layer;
+        private bool _isVisible;
         public Rigidbody Rigidbody { get; private set; }
         public Transform Transform { get; private set; }
         public int Layer
@@ -32,6 +33,28 @@ namespace Geekbrains
         {
             Rigidbody = GetComponent<Rigidbody>();
             Transform = transform;
+        }
+        
+        public bool IsVisible
+        {
+            get => _isVisible;
+            set
+            {
+                _isVisible = value;
+                RendererSetActive(transform);
+                if (transform.childCount <= 0) return;
+                foreach (Transform t in transform)
+                {
+                    RendererSetActive(t);
+                }
+            }
+        }
+        
+        private void RendererSetActive(Transform renderer)
+        {
+            var component = renderer.gameObject.GetComponent<Renderer>();
+            if (component)
+                component.enabled = _isVisible;
         }
     }
 }

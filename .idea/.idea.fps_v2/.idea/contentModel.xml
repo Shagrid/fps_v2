@@ -15,21 +15,32 @@
             <e p="InputController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="SelectionController.cs" t="Include" />
+            <e p="WeaponController.cs" t="Include" />
           </e>
           <e p="ENums" t="Include">
+            <e p="AmmunitionType.cs" t="Include" />
             <e p="FlashLightActiveType.cs" t="Include" />
+          </e>
+          <e p="Helper" t="Include">
+            <e p="CustumDebug.cs" t="Include" />
+            <e p="InfoCollision.cs" t="Include" />
           </e>
           <e p="Interfaces" t="Include">
             <e p="IExecute.cs" t="Include" />
             <e p="IInitialization.cs" t="Include" />
             <e p="IMotor.cs" t="Include" />
             <e p="ISelectObject.cs" t="Include" />
+            <e p="ISetDamage.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
+            <e p="Ammunition.cs" t="Include" />
             <e p="BaseObjectScene.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
+            <e p="Clip.cs" t="Include" />
             <e p="FlashLightModel.cs" t="Include" />
             <e p="SelectionObject.cs" t="Include" />
             <e p="UnitMotor.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
           </e>
           <e p="ServiceLocators" t="Include">
             <e p="ServiceLocator.cs" t="Include" />
