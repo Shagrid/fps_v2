@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Views
+namespace Geekbrains
 {
     public sealed class FlashLightUiBar : MonoBehaviour
     {

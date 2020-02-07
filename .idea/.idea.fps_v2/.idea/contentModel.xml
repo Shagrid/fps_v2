@@ -14,6 +14,7 @@
             <e p="GameController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="SelectionController.cs" t="Include" />
           </e>
           <e p="ENums" t="Include">
             <e p="FlashLightActiveType.cs" t="Include" />
@@ -22,10 +23,12 @@
             <e p="IExecute.cs" t="Include" />
             <e p="IInitialization.cs" t="Include" />
             <e p="IMotor.cs" t="Include" />
+            <e p="ISelectObject.cs" t="Include" />
           </e>
           <e p="Models" t="Include">
             <e p="BaseObjectScene.cs" t="Include" />
             <e p="FlashLightModel.cs" t="Include" />
+            <e p="SelectionObject.cs" t="Include" />
             <e p="UnitMotor.cs" t="Include" />
           </e>
           <e p="ServiceLocators" t="Include">
@@ -34,6 +37,8 @@
           </e>
           <e p="Views" t="Include">
             <e p="FlashLightUiBar.cs" t="Include" />
+            <e p="SelectionObjectMessageUi.cs" t="Include" />
+            <e p="UiInterface.cs" t="Include" />
           </e>
         </e>
       </e>

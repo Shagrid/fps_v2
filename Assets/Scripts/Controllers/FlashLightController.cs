@@ -1,17 +1,15 @@
-﻿using UnityEngine;
-using Views;
+﻿using GeekBrains;
+using UnityEngine;
 
 namespace Geekbrains
 {
     public sealed class FlashLightController : BaseController, IExecute, IInitialization
     {
         private FlashLightModel _flashLightModel;
-        private FlashLightUiBar _flashLightUiBar;
-
+        
         public void Initialization()
         {
             _flashLightModel = Object.FindObjectOfType<FlashLightModel>();
-            _flashLightUiBar = Object.FindObjectOfType<FlashLightUiBar>();
         }
 
         public override void On()
@@ -40,8 +38,8 @@ namespace Geekbrains
             _flashLightModel.Rotation();
             if (_flashLightModel.EditBatteryCharge())
             {
-                _flashLightUiBar.Fill = _flashLightModel.BatteryChargeCurrent/_flashLightModel.BatteryChargeMax;
-                _flashLightUiBar.SetColor(_flashLightModel.LowBattery() ? Color.red : Color.yellow);
+                UiInterface.FlashLightUiBar.Fill = _flashLightModel.BatteryChargeCurrent/_flashLightModel.BatteryChargeMax;
+                UiInterface.FlashLightUiBar.SetColor(_flashLightModel.LowBattery() ? Color.red : Color.yellow);
             }
             else
             {
