@@ -7,6 +7,11 @@ namespace Geekbrains
     {
         private KeyCode _activeFlashLight = KeyCode.F;
         
+        public InputController()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         public void Execute()
         {
             if (!IsActive) return;
